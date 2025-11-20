@@ -1,5 +1,63 @@
 [
   {
+    "name": "cate",
+    "description": "A lightweight CLI tool to display file contents with encoding support - like cat with better encoding handling.",
+    "repo": "https://github.com/superyngo/cate",
+    "homepage": "",
+    "license": "MIT",
+    "platforms": {
+      "linux-aarch64": {
+        "url": "https://github.com/superyngo/cate/releases/download/v0.1.1/cate-linux-aarch64.tar.gz",
+        "size": 316117
+      },
+      "linux-armv7": {
+        "url": "https://github.com/superyngo/cate/releases/download/v0.1.1/cate-linux-armv7.tar.gz",
+        "size": 324227
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/superyngo/cate/releases/download/v0.1.1/cate-linux-x86_64.tar.gz",
+        "size": 323523
+      },
+      "macos-aarch64": {
+        "url": "https://github.com/superyngo/cate/releases/download/v0.1.1/cate-macos-aarch64.tar.gz",
+        "size": 299840
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/superyngo/cate/releases/download/v0.1.1/cate-macos-x86_64.tar.gz",
+        "size": 309480
+      }
+    }
+  },
+  {
+    "name": "wedi",
+    "description": "A terminal text editor written in Rust",
+    "repo": "https://github.com/superyngo/wedi",
+    "homepage": null,
+    "license": "MIT",
+    "platforms": {
+      "linux-aarch64": {
+        "url": "https://github.com/superyngo/wedi/releases/download/v0.1.18/wedi-linux-aarch64.tar.gz",
+        "size": 448919
+      },
+      "linux-armv7": {
+        "url": "https://github.com/superyngo/wedi/releases/download/v0.1.18/wedi-linux-armv7.tar.gz",
+        "size": 451733
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/superyngo/wedi/releases/download/v0.1.18/wedi-linux-x86_64.tar.gz",
+        "size": 457814
+      },
+      "macos-aarch64": {
+        "url": "https://github.com/superyngo/wedi/releases/download/v0.1.18/wedi-macos-aarch64.tar.gz",
+        "size": 417014
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/superyngo/wedi/releases/download/v0.1.18/wedi-macos-x86_64.tar.gz",
+        "size": 429333
+      }
+    }
+  },
+  {
     "name": "ripgrep",
     "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
     "repo": "https://github.com/BurntSushi/ripgrep",
