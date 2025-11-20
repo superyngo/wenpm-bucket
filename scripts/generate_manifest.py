@@ -132,8 +132,22 @@ class PlatformDetector:
         ],
     }
 
-    # Archive extensions
-    ARCHIVE_EXTENSIONS = [".tar.gz", ".tgz", ".zip", ".tar.xz", ".tar.bz2"]
+    # Archive extensions (including standalone executables)
+    ARCHIVE_EXTENSIONS = [".tar.gz", ".tgz", ".zip", ".tar.xz", ".tar.bz2", ".exe"]
+
+    @classmethod
+    def get_linux_variant_priority(cls, filename: str) -> int:
+        """
+        Get priority for Linux variants (higher number = higher priority)
+        Priority: musl (3) > gnu (2) > no keyword (1)
+        """
+        filename_lower = filename.lower()
+        if "musl" in filename_lower:
+            return 3
+        elif "gnu" in filename_lower:
+            return 2
+        else:
+            return 1
 
     @classmethod
     def detect_platform(cls, filename: str) -> Optional[str]:
@@ -195,14 +209,30 @@ class ManifestGenerator:
                 return None
 
             # Extract platform binaries from assets
+            # Track platform info with priority for Linux variants
             platforms = {}
+            platform_priorities = {}  # Track priority of selected assets
+
             for asset in release.get("assets", []):
                 platform = PlatformDetector.detect_platform(asset["name"])
                 if platform:
-                    platforms[platform] = {
+                    asset_info = {
                         "url": asset["browser_download_url"],
                         "size": asset["size"],
                     }
+
+                    # For Linux platforms, check priority
+                    if platform.startswith("linux-"):
+                        current_priority = PlatformDetector.get_linux_variant_priority(asset["name"])
+                        existing_priority = platform_priorities.get(platform, 0)
+
+                        # Only update if current asset has higher priority
+                        if current_priority > existing_priority:
+                            platforms[platform] = asset_info
+                            platform_priorities[platform] = current_priority
+                    else:
+                        # For non-Linux platforms, just use the asset
+                        platforms[platform] = asset_info
 
             if not platforms:
                 print(f"⚠️  No binary assets found for {owner}/{repo}")
