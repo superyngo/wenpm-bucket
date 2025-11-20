@@ -26,19 +26,19 @@ class GitHubAPI:
     """Simple GitHub API client"""
 
     def __init__(self, token: Optional[str] = None):
-        self.token = token or os.environ.get('GITHUB_TOKEN')
+        self.token = token or os.environ.get("GITHUB_TOKEN")
         self.rate_limit_remaining = None
         self.rate_limit_reset = None
 
     def _make_request(self, url: str) -> Dict[str, Any]:
         """Make HTTP request to GitHub API"""
         headers = {
-            'Accept': 'application/vnd.github.v3+json',
-            'User-Agent': 'WenPM-Bucket-Generator/1.0'
+            "Accept": "application/vnd.github.v3+json",
+            "User-Agent": "WenPM-Bucket-Generator/1.0",
         }
 
         if self.token:
-            headers['Authorization'] = f'token {self.token}'
+            headers["Authorization"] = f"token {self.token}"
 
         req = Request(url, headers=headers)
 
@@ -46,10 +46,12 @@ class GitHubAPI:
             try:
                 with urlopen(req, timeout=30) as response:
                     # Update rate limit info
-                    self.rate_limit_remaining = response.headers.get('X-RateLimit-Remaining')
-                    self.rate_limit_reset = response.headers.get('X-RateLimit-Reset')
+                    self.rate_limit_remaining = response.headers.get(
+                        "X-RateLimit-Remaining"
+                    )
+                    self.rate_limit_reset = response.headers.get("X-RateLimit-Reset")
 
-                    data = json.loads(response.read().decode('utf-8'))
+                    data = json.loads(response.read().decode("utf-8"))
                     return data
 
             except HTTPError as e:
@@ -95,43 +97,43 @@ class PlatformDetector:
 
     # Platform patterns (os-arch)
     PATTERNS = {
-        'windows-x86_64': [
-            r'windows.*x86_64|x86_64.*windows|win64|windows.*amd64|x64.*windows',
-            r'pc-windows-msvc',
+        "windows-x86_64": [
+            r"windows.*x86_64|x86_64.*windows|win64|windows.*amd64|x64.*windows",
+            r"pc-windows-msvc",
         ],
-        'windows-i686': [
-            r'windows.*i686|i686.*windows|win32',
-            r'pc-windows-msvc.*i686',
+        "windows-i686": [
+            r"windows.*i686|i686.*windows|win32",
+            r"pc-windows-msvc.*i686",
         ],
-        'linux-x86_64': [
-            r'linux.*x86_64|x86_64.*linux|linux.*amd64',
-            r'unknown-linux-gnu',
-            r'unknown-linux-musl',
+        "linux-x86_64": [
+            r"linux.*x86_64|x86_64.*linux|linux.*amd64",
+            r"unknown-linux-gnu",
+            r"unknown-linux-musl",
         ],
-        'linux-aarch64': [
-            r'linux.*aarch64|aarch64.*linux|linux.*arm64',
+        "linux-aarch64": [
+            r"linux.*aarch64|aarch64.*linux|linux.*arm64",
         ],
-        'linux-armv7': [
-            r'linux.*armv7|armv7.*linux|linux.*arm7',
+        "linux-armv7": [
+            r"linux.*armv7|armv7.*linux|linux.*arm7",
         ],
-        'darwin-x86_64': [
-            r'darwin.*x86_64|x86_64.*darwin|macos.*x86_64|osx.*x86_64',
-            r'apple-darwin.*x86_64',
+        "darwin-x86_64": [
+            r"darwin.*x86_64|x86_64.*darwin|macos.*x86_64|osx.*x86_64",
+            r"apple-darwin.*x86_64",
         ],
-        'darwin-aarch64': [
-            r'darwin.*aarch64|aarch64.*darwin|darwin.*arm64|macos.*arm64|osx.*arm64',
-            r'apple-darwin.*aarch64',
+        "darwin-aarch64": [
+            r"darwin.*aarch64|aarch64.*darwin|darwin.*arm64|macos.*arm64|osx.*arm64",
+            r"apple-darwin.*aarch64",
         ],
-        'macos-x86_64': [
-            r'macos.*x86_64|osx.*x86_64',
+        "macos-x86_64": [
+            r"macos.*x86_64|osx.*x86_64",
         ],
-        'macos-aarch64': [
-            r'macos.*aarch64|macos.*arm64|osx.*arm64',
+        "macos-aarch64": [
+            r"macos.*aarch64|macos.*arm64|osx.*arm64",
         ],
     }
 
     # Archive extensions
-    ARCHIVE_EXTENSIONS = ['.tar.gz', '.tgz', '.zip', '.tar.xz', '.tar.bz2']
+    ARCHIVE_EXTENSIONS = [".tar.gz", ".tgz", ".zip", ".tar.xz", ".tar.bz2"]
 
     @classmethod
     def detect_platform(cls, filename: str) -> Optional[str]:
@@ -161,8 +163,8 @@ class ManifestGenerator:
     def parse_github_url(self, url: str) -> Optional[tuple]:
         """Parse GitHub URL to extract owner and repo"""
         patterns = [
-            r'github\.com/([^/]+)/([^/]+?)(?:\.git)?$',
-            r'github\.com/([^/]+)/([^/]+)',
+            r"github\.com/([^/]+)/([^/]+?)(?:\.git)?$",
+            r"github\.com/([^/]+)/([^/]+)",
         ]
 
         for pattern in patterns:
@@ -194,12 +196,12 @@ class ManifestGenerator:
 
             # Extract platform binaries from assets
             platforms = {}
-            for asset in release.get('assets', []):
-                platform = PlatformDetector.detect_platform(asset['name'])
+            for asset in release.get("assets", []):
+                platform = PlatformDetector.detect_platform(asset["name"])
                 if platform:
                     platforms[platform] = {
-                        'url': asset['browser_download_url'],
-                        'size': asset['size']
+                        "url": asset["browser_download_url"],
+                        "size": asset["size"],
                     }
 
             if not platforms:
@@ -208,12 +210,14 @@ class ManifestGenerator:
 
             # Build package info
             package = {
-                'name': repo_info['name'],
-                'description': repo_info['description'] or '',
-                'repo': repo_info['html_url'],
-                'homepage': repo_info['homepage'],
-                'license': repo_info['license']['spdx_id'] if repo_info.get('license') else None,
-                'platforms': platforms
+                "name": repo_info["name"],
+                "description": repo_info["description"] or "",
+                "repo": repo_info["html_url"],
+                "homepage": repo_info["homepage"],
+                "license": repo_info["license"]["spdx_id"]
+                if repo_info.get("license")
+                else None,
+                "platforms": platforms,
             }
 
             return package
@@ -226,11 +230,11 @@ class ManifestGenerator:
         """Load GitHub URLs from sources.txt"""
         urls = []
 
-        with open(sources_file, 'r', encoding='utf-8') as f:
+        with open(sources_file, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 # Skip empty lines and comments
-                if line and not line.startswith('#'):
+                if line and not line.startswith("#"):
                     urls.append(line)
 
         return urls
@@ -265,8 +269,12 @@ class ManifestGenerator:
 
         # Save manifest
         print(f"\n💾 Saving manifest to {output_file}...")
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(self.packages, f, indent=2, ensure_ascii=False)
+        manifest_obj = {
+            "packages": self.packages,
+            "last_updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        }
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(manifest_obj, f, indent=2, ensure_ascii=False)
 
         # Summary
         print("\n" + "=" * 50)
@@ -277,7 +285,7 @@ class ManifestGenerator:
         # Platform statistics
         platform_stats = {}
         for pkg in self.packages:
-            for platform in pkg['platforms'].keys():
+            for platform in pkg["platforms"].keys():
                 platform_stats[platform] = platform_stats.get(platform, 0) + 1
 
         if platform_stats:
@@ -291,22 +299,24 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(
-        description='Generate WenPM bucket manifest from sources'
+        description="Generate WenPM bucket manifest from sources"
     )
     parser.add_argument(
-        'sources',
-        nargs='?',
-        default='sources.txt',
-        help='Source file containing GitHub URLs (default: sources.txt)'
+        "sources",
+        nargs="?",
+        default="sources.txt",
+        help="Source file containing GitHub URLs (default: sources.txt)",
     )
     parser.add_argument(
-        '-o', '--output',
-        default='manifest.json',
-        help='Output manifest file (default: manifest.json)'
+        "-o",
+        "--output",
+        default="manifest.json",
+        help="Output manifest file (default: manifest.json)",
     )
     parser.add_argument(
-        '-t', '--token',
-        help='GitHub personal access token (or use GITHUB_TOKEN env var)'
+        "-t",
+        "--token",
+        help="GitHub personal access token (or use GITHUB_TOKEN env var)",
     )
 
     args = parser.parse_args()
@@ -326,9 +336,10 @@ def main():
     except Exception as e:
         print(f"\n❌ Fatal error: {e}")
         import traceback
+
         traceback.print_exc()
         sys.exit(1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
