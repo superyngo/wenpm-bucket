@@ -1,0 +1,31 @@
+# WenPM Bucket - Package Sources
+#
+# List GitHub repository URLs (one per line)
+# Comments start with #
+# Empty lines are ignored
+#
+# Format: https://github.com/OWNER/REPO
+
+# === Search & Find ===
+https://github.com/BurntSushi/ripgrep
+https://github.com/sharkdp/fd
+
+# === File Viewers ===
+https://github.com/sharkdp/bat
+https://github.com/sharkdp/hexyl
+
+# === Development Tools ===
+https://github.com/sharkdp/hyperfine
+https://github.com/XAMPPRocky/tokei
+
+# === Git Tools ===
+https://github.com/extrawurst/gitui
+
+# === Navigation ===
+https://github.com/ajeetdsouza/zoxide
+
+# === System Monitoring ===
+https://github.com/ClementTsang/bottom
+
+# === Shell Enhancement ===
+https://github.com/starship/starship

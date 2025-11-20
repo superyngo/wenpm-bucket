@@ -1,0 +1,227 @@
+[
+  {
+    "name": "ripgrep",
+    "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+    "repo": "https://github.com/BurntSushi/ripgrep",
+    "homepage": "",
+    "license": "Unlicense",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-apple-darwin.tar.gz",
+        "size": 1777930
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip",
+        "size": 1810687
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz",
+        "size": 2263077
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-apple-darwin.tar.gz",
+        "size": 1894127
+      }
+    }
+  },
+  {
+    "name": "fd",
+    "description": "A simple, fast and user-friendly alternative to 'find'",
+    "repo": "https://github.com/sharkdp/fd",
+    "homepage": "",
+    "license": "Apache-2.0",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-apple-darwin.tar.gz",
+        "size": 1337349
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip",
+        "size": 1490905
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz",
+        "size": 1759301
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-apple-darwin.tar.gz",
+        "size": 1430203
+      }
+    }
+  },
+  {
+    "name": "bat",
+    "description": "A cat(1) clone with wings.",
+    "repo": "https://github.com/sharkdp/bat",
+    "homepage": "",
+    "license": "Apache-2.0",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-aarch64-apple-darwin.tar.gz",
+        "size": 3219053
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-x86_64-pc-windows-msvc.zip",
+        "size": 3607304
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-x86_64-unknown-linux-musl.tar.gz",
+        "size": 3579781
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-x86_64-apple-darwin.tar.gz",
+        "size": 3367829
+      }
+    }
+  },
+  {
+    "name": "hexyl",
+    "description": "A command-line hex viewer",
+    "repo": "https://github.com/sharkdp/hexyl",
+    "homepage": "",
+    "license": "Apache-2.0",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/sharkdp/hexyl/releases/download/v0.16.0/hexyl-v0.16.0-aarch64-apple-darwin.tar.gz",
+        "size": 434542
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/sharkdp/hexyl/releases/download/v0.16.0/hexyl-v0.16.0-x86_64-unknown-linux-musl.tar.gz",
+        "size": 533131
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/sharkdp/hexyl/releases/download/v0.16.0/hexyl-v0.16.0-x86_64-pc-windows-msvc.zip",
+        "size": 361368
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/sharkdp/hexyl/releases/download/v0.16.0/hexyl-v0.16.0-x86_64-apple-darwin.tar.gz",
+        "size": 456236
+      }
+    }
+  },
+  {
+    "name": "hyperfine",
+    "description": "A command-line benchmarking tool",
+    "repo": "https://github.com/sharkdp/hyperfine",
+    "homepage": "",
+    "license": "Apache-2.0",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-aarch64-apple-darwin.tar.gz",
+        "size": 582508
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-unknown-linux-musl.tar.gz",
+        "size": 710161
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-pc-windows-msvc.zip",
+        "size": 589310
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-apple-darwin.tar.gz",
+        "size": 621721
+      }
+    }
+  },
+  {
+    "name": "gitui",
+    "description": "Blazing 💥 fast terminal-ui for git written in rust 🦀",
+    "repo": "https://github.com/gitui-org/gitui",
+    "homepage": "",
+    "license": "MIT",
+    "platforms": {
+      "linux-aarch64": {
+        "url": "https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-linux-aarch64.tar.gz",
+        "size": 5916903
+      },
+      "linux-armv7": {
+        "url": "https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-linux-armv7.tar.gz",
+        "size": 5078574
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-linux-x86_64.tar.gz",
+        "size": 5784977
+      }
+    }
+  },
+  {
+    "name": "zoxide",
+    "description": "A smarter cd command. Supports all major shells.",
+    "repo": "https://github.com/ajeetdsouza/zoxide",
+    "homepage": "https://crates.io/crates/zoxide",
+    "license": "MIT",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz",
+        "size": 480166
+      },
+      "linux-aarch64": {
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-linux-android.tar.gz",
+        "size": 505850
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-pc-windows-msvc.zip",
+        "size": 547884
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz",
+        "size": 586553
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-apple-darwin.tar.gz",
+        "size": 506541
+      }
+    }
+  },
+  {
+    "name": "bottom",
+    "description": "Yet another cross-platform graphical process/system monitor.",
+    "repo": "https://github.com/ClementTsang/bottom",
+    "homepage": "https://bottom.pages.dev",
+    "license": "MIT",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/ClementTsang/bottom/releases/download/0.11.4/bottom_aarch64-apple-darwin.tar.gz",
+        "size": 1775774
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/ClementTsang/bottom/releases/download/0.11.4/bottom_x86_64-pc-windows-msvc.zip",
+        "size": 1855095
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/ClementTsang/bottom/releases/download/0.11.4/bottom_x86_64-unknown-linux-musl.tar.gz",
+        "size": 2165774
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/ClementTsang/bottom/releases/download/0.11.4/bottom_x86_64-apple-darwin.tar.gz",
+        "size": 1933486
+      }
+    }
+  },
+  {
+    "name": "starship",
+    "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+    "repo": "https://github.com/starship/starship",
+    "homepage": "https://starship.rs",
+    "license": "ISC",
+    "platforms": {
+      "darwin-aarch64": {
+        "url": "https://github.com/starship/starship/releases/download/v1.24.1/starship-aarch64-apple-darwin.tar.gz",
+        "size": 3865881
+      },
+      "windows-x86_64": {
+        "url": "https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-pc-windows-msvc.zip",
+        "size": 4482280
+      },
+      "linux-x86_64": {
+        "url": "https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-unknown-linux-musl.tar.gz",
+        "size": 5025658
+      },
+      "darwin-x86_64": {
+        "url": "https://github.com/starship/starship/releases/download/v1.24.1/starship-x86_64-apple-darwin.tar.gz",
+        "size": 4192161
+      }
+    }
+  }
+]
