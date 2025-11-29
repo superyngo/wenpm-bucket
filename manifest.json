@@ -8,36 +8,36 @@
       "license": "MIT",
       "platforms": {
         "linux-aarch64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-linux-aarch64-musl.tar.gz",
-          "size": 1482723
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-aarch64-musl.tar.gz",
+          "size": 1483431
         },
         "linux-armv7": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-linux-armv7-musl.tar.gz",
-          "size": 1457485
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-armv7-musl.tar.gz",
+          "size": 1459439
         },
         "linux-i686": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-linux-i686-musl.tar.gz",
-          "size": 1515979
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-i686-musl.tar.gz",
+          "size": 1518587
         },
         "linux-x86_64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-linux-x86_64-musl.tar.gz",
-          "size": 1509241
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-x86_64-musl.tar.gz",
+          "size": 1511799
         },
         "macos-aarch64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-macos-aarch64.tar.gz",
-          "size": 1433187
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-macos-aarch64.tar.gz",
+          "size": 1434797
         },
         "darwin-x86_64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-macos-x86_64.tar.gz",
-          "size": 1441389
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-macos-x86_64.tar.gz",
+          "size": 1442562
         },
         "windows-i686": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-windows-i686.exe",
-          "size": 2257408
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-windows-i686.exe",
+          "size": 2262528
         },
         "windows-x86_64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.3.1/cate-windows-x86_64.exe",
-          "size": 2416640
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-windows-x86_64.exe",
+          "size": 2423808
         }
       }
     },
@@ -316,5 +316,5 @@
       }
     }
   ],
-  "last_updated": "2025-11-28T00:18:19Z"
+  "last_updated": "2025-11-29T00:17:42Z"
 }
