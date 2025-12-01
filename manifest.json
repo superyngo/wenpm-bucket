@@ -8,36 +8,36 @@
       "license": "MIT",
       "platforms": {
         "linux-aarch64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-aarch64-musl.tar.gz",
-          "size": 1483431
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-linux-aarch64-musl.tar.gz",
+          "size": 1482998
         },
         "linux-armv7": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-armv7-musl.tar.gz",
-          "size": 1459439
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-linux-armv7-musl.tar.gz",
+          "size": 1458535
         },
         "linux-i686": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-i686-musl.tar.gz",
-          "size": 1518587
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-linux-i686-musl.tar.gz",
+          "size": 1517851
         },
         "linux-x86_64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-linux-x86_64-musl.tar.gz",
-          "size": 1511799
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-linux-x86_64-musl.tar.gz",
+          "size": 1510482
         },
         "macos-aarch64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-macos-aarch64.tar.gz",
-          "size": 1434797
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-macos-aarch64.tar.gz",
+          "size": 1434018
         },
         "darwin-x86_64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-macos-x86_64.tar.gz",
-          "size": 1442562
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-macos-x86_64.tar.gz",
+          "size": 1441790
         },
         "windows-i686": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-windows-i686.exe",
-          "size": 2262528
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-windows-i686.exe",
+          "size": 2258944
         },
         "windows-x86_64": {
-          "url": "https://github.com/superyngo/cate/releases/download/v0.4.1/cate-windows-x86_64.exe",
-          "size": 2423808
+          "url": "https://github.com/superyngo/cate/releases/download/v0.4.2/cate-windows-x86_64.exe",
+          "size": 2419712
         }
       }
     },
@@ -49,36 +49,77 @@
       "license": "MIT",
       "platforms": {
         "linux-aarch64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-linux-aarch64-musl.tar.gz",
-          "size": 1607072
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-linux-aarch64-musl.tar.gz",
+          "size": 1611006
         },
         "linux-armv7": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-linux-armv7-musl.tar.gz",
-          "size": 1580709
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-linux-armv7-musl.tar.gz",
+          "size": 1582949
         },
         "linux-i686": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-linux-i686-musl.tar.gz",
-          "size": 1646035
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-linux-i686-musl.tar.gz",
+          "size": 1649029
         },
         "linux-x86_64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-linux-x86_64-musl.tar.gz",
-          "size": 1640006
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-linux-x86_64-musl.tar.gz",
+          "size": 1643656
         },
         "macos-aarch64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-macos-aarch64.tar.gz",
-          "size": 1543990
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-macos-aarch64.tar.gz",
+          "size": 1546654
         },
         "darwin-x86_64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-macos-x86_64.tar.gz",
-          "size": 1554741
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-macos-x86_64.tar.gz",
+          "size": 1558324
         },
         "windows-i686": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-windows-i686.exe",
-          "size": 2605056
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-windows-i686.exe",
+          "size": 2616320
         },
         "windows-x86_64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.0/wedi-windows-x86_64.exe",
-          "size": 2813952
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.1/wedi-windows-x86_64.exe",
+          "size": 2826240
+        }
+      }
+    },
+    {
+      "name": "Weni",
+      "description": "Cross-platform system hardware and battery information CLI.",
+      "repo": "https://github.com/superyngo/Weni",
+      "homepage": null,
+      "license": "MIT",
+      "platforms": {
+        "linux-aarch64": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-linux-aarch64-musl.tar.gz",
+          "size": 624344
+        },
+        "linux-armv7": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-linux-armv7-musl.tar.gz",
+          "size": 615555
+        },
+        "linux-i686": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-linux-i686-musl.tar.gz",
+          "size": 581223
+        },
+        "linux-x86_64": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-linux-x86_64-musl.tar.gz",
+          "size": 556279
+        },
+        "macos-aarch64": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-macos-aarch64.tar.gz",
+          "size": 454255
+        },
+        "darwin-x86_64": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-macos-x86_64.tar.gz",
+          "size": 466397
+        },
+        "windows-i686": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-windows-i686.exe",
+          "size": 739840
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/superyngo/Weni/releases/download/v0.1.0/weni-windows-x86_64.exe",
+          "size": 892928
         }
       }
     },
@@ -316,5 +357,5 @@
       }
     }
   ],
-  "last_updated": "2025-12-01T00:23:08Z"
+  "last_updated": "2025-12-01T07:38:23Z"
 }
