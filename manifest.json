@@ -205,32 +205,32 @@
       "license": "Apache-2.0",
       "platforms": {
         "darwin-aarch64": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-aarch64-apple-darwin.tar.gz",
-          "size": 3219053
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-apple-darwin.tar.gz",
+          "size": 3216703
         },
         "windows-x86_64": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-x86_64-pc-windows-msvc.zip",
-          "size": 3607304
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip",
+          "size": 3613318
         },
         "linux-aarch64": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-aarch64-unknown-linux-musl.tar.gz",
-          "size": 3387869
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz",
+          "size": 3383478
         },
         "linux-armv6": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-arm-unknown-linux-musleabihf.tar.gz",
-          "size": 3409448
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-arm-unknown-linux-musleabihf.tar.gz",
+          "size": 3407734
         },
         "linux-i686": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-i686-unknown-linux-musl.tar.gz",
-          "size": 3543794
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-i686-unknown-linux-musl.tar.gz",
+          "size": 3545941
         },
         "darwin-x86_64": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-x86_64-apple-darwin.tar.gz",
-          "size": 3367829
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-apple-darwin.tar.gz",
+          "size": 3367309
         },
         "linux-x86_64": {
-          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.0/bat-v0.26.0-x86_64-unknown-linux-musl.tar.gz",
-          "size": 3579781
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz",
+          "size": 3584928
         }
       }
     },
@@ -453,5 +453,5 @@
       }
     }
   ],
-  "last_updated": "2025-12-02T07:16:22Z"
+  "last_updated": "2025-12-03T00:18:52Z"
 }
