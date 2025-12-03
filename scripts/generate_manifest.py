@@ -262,9 +262,19 @@ class ManifestGenerator:
             return []
 
         try:
-            # Get gist info
+            # Get gist info (use anonymous access for public gists)
             gist_url = f"{GITHUB_API_BASE}/gists/{gist_id}"
-            gist_data = self.api._make_request(gist_url)
+
+            # Create a temporary API client without token for gist access
+            # GITHUB_TOKEN from Actions doesn't have permission to access gists
+            headers = {
+                "Accept": "application/vnd.github.v3+json",
+                "User-Agent": "Wenget-Bucket-Generator/1.0",
+            }
+            req = Request(gist_url, headers=headers)
+
+            with urlopen(req, timeout=30) as response:
+                gist_data = json.loads(response.read().decode("utf-8"))
 
             scripts = []
             files = gist_data.get("files", {})
