@@ -465,12 +465,12 @@
       }
     }
   ],
-  "last_updated": "2025-12-03T07:24:20Z",
+  "last_updated": "2025-12-03T08:04:02Z",
   "scripts": [
     {
       "name": "mini-nano",
       "description": "Shell and PowerShell utility scripts",
-      "url": "https://gist.githubusercontent.com/superyngo/c77bbbf67759cc4213aac12ebe980225/raw/88dcfe240a85f1520b02df278e16f52222df285e/mini-nano.ps1",
+      "url": "https://gist.githubusercontent.com/superyngo/c77bbbf67759cc4213aac12ebe980225/raw/7f15ba60b10727621e57d9d9f31aece8b8d74b0f/mini-nano.ps1",
       "script_type": "powershell",
       "repo": "https://gist.github.com/superyngo/c77bbbf67759cc4213aac12ebe980225"
     },
@@ -485,6 +485,13 @@
       "name": "reformat_ventoy",
       "description": "Shell and PowerShell utility scripts",
       "url": "https://gist.githubusercontent.com/superyngo/c77bbbf67759cc4213aac12ebe980225/raw/5b190af8efdc378a813350c59f586d4ec7d83b97/reformat_ventoy.sh",
+      "script_type": "bash",
+      "repo": "https://gist.github.com/superyngo/c77bbbf67759cc4213aac12ebe980225"
+    },
+    {
+      "name": "sync_ssh_to_rclone",
+      "description": "Shell and PowerShell utility scripts",
+      "url": "https://gist.githubusercontent.com/superyngo/c77bbbf67759cc4213aac12ebe980225/raw/b0bf96b4898582b1a78d9e87247d6ef9fac455f4/sync_ssh_to_rclone.sh",
       "script_type": "bash",
       "repo": "https://gist.github.com/superyngo/c77bbbf67759cc4213aac12ebe980225"
     }
