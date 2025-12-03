@@ -154,6 +154,7 @@ class PlatformDetector:
         "darwin-x86_64": [
             r"darwin.*x86_64|x86_64.*darwin|macos.*x86_64|osx.*x86_64",
             r"apple-darwin.*x86_64",
+            r"(?:mac|osx)-x86(?:[_.-]|\.tar|\.zip)",  # mac-x86, osx-x86 (assume x86_64)
         ],
         "darwin-aarch64": [
             r"darwin.*aarch64|aarch64.*darwin|darwin.*arm64|macos.*arm64|osx.*arm64",
@@ -167,8 +168,22 @@ class PlatformDetector:
         ],
     }
 
+    # Fallback patterns for ambiguous filenames (assume most common architecture)
+    # These patterns only match OS without specific architecture info
+    FALLBACK_PATTERNS = {
+        "windows-x86_64": [
+            r"(?:^|[_-])win(?:dows)?(?:[_.-]|\.tar|\.zip|\.msi|\.exe)",  # win.tar.gz, -win.zip, win.msi
+        ],
+        "linux-x86_64": [
+            r"(?:^|[_-])linux(?:[_.-]|\.tar|\.zip)",  # linux.tar.gz, -linux.zip
+        ],
+        "darwin-aarch64": [
+            r"(?:^|[_-])(?:mac|macos|osx|darwin)(?:[_.-]|\.tar|\.zip)",  # mac.tar.gz, -macos.zip (assume Apple Silicon)
+        ],
+    }
+
     # Archive extensions (including standalone executables)
-    ARCHIVE_EXTENSIONS = [".tar.gz", ".tgz", ".zip", ".tar.xz", ".tar.bz2", ".exe"]
+    ARCHIVE_EXTENSIONS = [".tar.gz", ".tgz", ".zip", ".tar.xz", ".tar.bz2", ".exe", ".msi"]
 
     @classmethod
     def get_linux_variant_priority(cls, filename: str) -> int:
@@ -186,17 +201,24 @@ class PlatformDetector:
 
     @classmethod
     def detect_platform(cls, filename: str) -> Optional[str]:
-        """Detect platform from filename"""
+        """Detect platform from filename with fallback support"""
         filename_lower = filename.lower()
 
         # Check if it's an archive
         if not any(filename_lower.endswith(ext) for ext in cls.ARCHIVE_EXTENSIONS):
             return None
 
-        # Try each platform pattern
+        # Priority 1: Try exact platform patterns (with architecture info)
         for platform, patterns in cls.PATTERNS.items():
             for pattern in patterns:
                 if re.search(pattern, filename_lower):
+                    return platform
+
+        # Priority 2: Try fallback patterns (assume common architecture)
+        for platform, patterns in cls.FALLBACK_PATTERNS.items():
+            for pattern in patterns:
+                if re.search(pattern, filename_lower):
+                    print(f"   ⚠️  Fallback assumption: {filename} -> {platform}")
                     return platform
 
         return None
