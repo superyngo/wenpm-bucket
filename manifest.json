@@ -49,36 +49,36 @@
       "license": "MIT",
       "platforms": {
         "linux-aarch64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-linux-aarch64-musl.tar.gz",
-          "size": 1611581
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-linux-aarch64-musl.tar.gz",
+          "size": 1611635
         },
         "linux-armv7": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-linux-armv7-musl.tar.gz",
-          "size": 1583213
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-linux-armv7-musl.tar.gz",
+          "size": 1583473
         },
         "linux-i686": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-linux-i686-musl.tar.gz",
-          "size": 1649858
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-linux-i686-musl.tar.gz",
+          "size": 1650098
         },
         "linux-x86_64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-linux-x86_64-musl.tar.gz",
-          "size": 1644149
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-linux-x86_64-musl.tar.gz",
+          "size": 1644151
         },
         "macos-aarch64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-macos-aarch64.tar.gz",
-          "size": 1547086
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-macos-aarch64.tar.gz",
+          "size": 1546968
         },
         "darwin-x86_64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-macos-x86_64.tar.gz",
-          "size": 1558557
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-macos-x86_64.tar.gz",
+          "size": 1558620
         },
         "windows-i686": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-windows-i686.exe",
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-windows-i686.exe",
           "size": 2616320
         },
         "windows-x86_64": {
-          "url": "https://github.com/superyngo/wedi/releases/download/v0.2.3/wedi-windows-x86_64.exe",
-          "size": 2826752
+          "url": "https://github.com/superyngo/wedi/releases/download/v0.3.0/wedi-windows-x86_64.exe",
+          "size": 2825728
         }
       }
     },
@@ -465,7 +465,7 @@
       }
     }
   ],
-  "last_updated": "2025-12-04T00:19:15Z",
+  "last_updated": "2025-12-05T00:19:28Z",
   "scripts": [
     {
       "name": "mini-nano",
